@@ -78,7 +78,7 @@ int main(int argc, char **argv){
             user_embed = i_mapper.textgcn_embedding(user2items);
 
             trial = 0.0;
-            for (int b=0; b<5; b++)
+            for (int b=0; b<num_negative; b++)
             {
                 item2words_pos.clear();
                 item_pos = ui_sampler.draw_a_context(user);
